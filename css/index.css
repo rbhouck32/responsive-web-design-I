@@ -482,6 +482,193 @@ footer {
   border: 3px solid black;
 }
 
+.nav-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  height: 5em;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+}
+
+.main-img {
+  height: 200px;
+  width: 1024px;
+  background-image: url("../img/services-header.jpg");
+}
+
+.main-info h1 {
+  font-size: 35px;
+  padding-top: 40px;
+}
+
+.main-info p {
+  max-width: 1024px;
+  padding-bottom: 35px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1024px;
+  height: calc(900px + 8em);
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 2em 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.flex-card {
+  border: 1px solid black;
+  width: calc(50% - 1em);
+  height: 300px;
+  background: #eae9e9;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 1em 1em;
+}
+
+.flex-card button {
+  border-radius: 10px;
+  width: 200px;
+}
+.flex-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.flex-card h3 {
+  font-size: 1.5em;
+}
+
+.add-content {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1024px;
+  padding-top: 2em;
+
+  justify-content: space-between;
+}
+
+.add-content div {
+  width: calc(50% - 1em);
+}
+
+.services-info-img {
+  width: 100%;
+}
+
+.service-facts ul {
+  list-style: square;
+  line-height: 1.5em;
+  padding-left: 1.4em;
+}
+
+.service-facts p {
+  margin: 1em 0;
+}
+
+footer {
+  margin: 4em 0;
+}
+
+#index-link img {
+  width: 204px;
+  padding: 0 0;
+}
+
+.gallery-img1 {
+  background-image: url("../img/bags.jpg");
+  width: 1024px;
+  height: 200px;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.gallery-img2 {
+  background-image: url("../img/screens.jpg");
+  width: 1024px;
+  height: 100px;
+  background-size: cover;
+  margin-top: 15px;
+  background-position-y: center;
+  opacity: 75%;
+}
+
+.two-cards {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.gallery-img3 {
+  background-image: url("../img/phone.jpg");
+  width: 49%;
+  height: 500px;
+  background-size: cover;
+  background-position-x: left;
+}
+
+.gallery-img4 {
+  background-image: url("../img/phone-2.jpg");
+  width: 49%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.gallery-img4:hover,
+.gallery-img3:hover,
+.gallery-img2:hover,
+.gallery-img1:hover {
+  border: 3px dotted black;
+  border-radius: 100px;
+
+  opacity: 80%;
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+
+  height: 600px;
+}
+
+.cta-card h1 {
+  color: black;
+  text-align: center;
+}
+
+.cta-btn {
+  padding-left: 360px;
+}
+
+.cta-btn button {
+  border-radius: 60px;
+  background-color: lightslategray;
+  color: white;
+  font-size: 30px;
+}
+
+.gallery-img1,
+.gallery-img2,
+.gallery-img3,
+.gallery-img4 {
+  border: 3px solid black;
+}
+
 @media (max-width: 800px) {
   .container {
     max-width: 800px;
@@ -585,7 +772,7 @@ footer {
   .container header nav a {
     text-align: center;
     border-top: 1px solid black;
-    width: 60%;
+    width: 100%;
   }
 
   .cta-wrapper {
