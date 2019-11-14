@@ -284,6 +284,7 @@ p {
 
 footer h3 {
   padding-top: 50px;
+  padding-left: 40px;
 }
 
 .content-top {
@@ -305,9 +306,6 @@ footer p {
   text-align: center;
 }
 
-footer h3 {
-  padding-left: 40px;
-}
 /* SERVICES CSS FLEXBOX */
 
 .main-content {
@@ -315,7 +313,7 @@ footer h3 {
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1024px;
+  max-width: 100%;
 }
 
 .main-img {
@@ -332,14 +330,14 @@ footer h3 {
 }
 
 .main-info p {
-  max-width: 1024px;
+  max-width: 100%;
   padding-bottom: 35px;
 }
 
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  max-width: 1024px;
+  max-width: 100%;
   height: calc(900px + 8em);
   align-content: space-between;
   justify-content: space-between;
@@ -405,10 +403,6 @@ footer {
   margin: 4em 0;
 }
 
-#index-link img {
-  width: 204px;
-  padding: 0 0;
-}
 /* CSS FOR PRODUCTS PAGE */
 
 .gallery-img1 {
@@ -569,19 +563,19 @@ footer {
   }
 
   footer h3 {
-    padding-left: 35px;
+    padding: 0;
+    padding-top: 20px;
   }
 
+  footer p {
+    padding-right: 35px;
+  }
   footer .copy {
     padding: 60px 0;
   }
 }
 
 /* Media Queries for Services Page  (Max-Width: 800px;)*/
-#services-nav {
-  display: flex;
-  flex-flow: column-reverse;
-}
 
 .main-content {
   width: 80%;
