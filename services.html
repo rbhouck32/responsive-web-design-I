@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Great Idea!</title>
 
@@ -10,7 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css\index.css" />
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -20,25 +21,19 @@
   <body>
     <div class="container">
       <header>
-        <div class="nav-wrapper">
+        <div id="services-nav" class="nav-wrapper">
           <nav class="navigation">
-            <a
-              href="C:\Users\User.DESKTOP-POB644E\Desktop\LambdaGit\UI-III-Flexbox\great-idea\services.html"
-              >Services</a
-            >
-            <a href="/UI-III-Flexbox/great-idea/product.html">Product</a>
+            <a href="services.html">Services</a>
+            <a href="product.html">Product</a>
             <a href="#">Vision</a>
             <a href="#">Features</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
           </nav>
-          <a id="index-link" href="/UI-III-Flexbox/great-idea/index.html">
-            <img
-              class="logo"
-              src="img/logo.png"
-              alt="Great Idea! Company logo."
-            />
-          </a>
+
+          <a id="index-link" href="index.html">
+            <img class="logo" src="img/logo.png" alt="Great Idea! Company logo."
+          /></a>
         </div>
       </header>
 
@@ -163,16 +158,24 @@
             <li>Great thing</li>
           </ul>
         </div>
-        <div>
-          <img
-            class="services-info-img"
-            src="img/services-info.png"
-            alt="one of our employees hard at work"
-          />
-        </div>
+        <div class="add-content-img"></div>
       </section>
       <footer>
-        <p>Copyright Great Idea! 2018</p>
+        <h3>Contact</h3>
+
+        <address>
+          <p class="postal-address">
+            123 Way 456 Street<br />
+            Somewhere, USA<br />
+            <br />
+            1 (888) 888-8888
+            <br />
+            <br />
+            <a class="email" mailto="sales@greatidea.io">sales@greatidea.io</a>
+          </p>
+        </address>
+
+        <p class="copy">Copyright Great Idea! 2018</p>
       </footer>
     </div>
   </body>
