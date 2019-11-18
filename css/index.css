@@ -1,3 +1,727 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+header {
+  overflow: auto;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.nav-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: 10em;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation a {
+  padding: 0 1em;
+  text-decoration: none;
+  color: #a5a5a5;
+  font-size: 22px;
+}
+
+.logo {
+  width: 100%;
+  padding-right: 35px;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-weight: 500;
+}
+
+.cta-card button {
+  width: 270px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.cta-card.left {
+  width: 49%;
+  height: 500px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.cta-card.right {
+  width: 49%;
+  height: 500px;
+  text-align: right;
+  padding-top: 50px;
+}
+
+.features,
+.about,
+.services,
+.product,
+.vision {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.content-top {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+.features {
+  width: 49%;
+  padding: 10px;
+  margin: 25px 0;
+}
+
+.about {
+  width: 49%;
+  padding: 10px;
+  margin: 25px 0;
+}
+
+.center-img {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/mid-page-accent.jpg");
+  text-align: center;
+}
+
+.content-bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services,
+.product {
+  padding-right: 50px;
+}
+
+.services {
+  width: 33%;
+}
+
+.product {
+  width: 33%;
+}
+
+.vision {
+  width: 33%;
+}
+
+.footer {
+  width: 100%;
+  height: 700px;
+}
+
+footer h3 {
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+.content-top {
+  margin: 20px 0;
+}
+
+.content-bottom {
+  border-bottom: 2px solid black;
+  padding: 50px;
+}
+
+address {
+  height: 50px;
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* SERVICES CSS FLEXBOX */
+
+.main-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.main-img {
+  height: 200px;
+  width: 100%;
+  background-image: url("../img/services-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-info h1 {
+  font-size: 35px;
+  padding-top: 40px;
+}
+
+.main-info p {
+  max-width: 100%;
+  padding-bottom: 35px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+  height: calc(900px + 8em);
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 2em 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.flex-card {
+  border: 1px solid black;
+  width: calc(50% - 1em);
+  height: 300px;
+  background: #eae9e9;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 1em 1em;
+}
+
+.flex-card button {
+  border-radius: 10px;
+  width: 200px;
+}
+.flex-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.flex-card h3 {
+  font-size: 1.5em;
+}
+
+.add-content {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1024px;
+  padding-top: 2em;
+
+  justify-content: space-between;
+}
+
+.add-content div {
+  width: calc(50% - 1em);
+}
+
+.add-content-img {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/services-info.png");
+}
+
+.service-facts ul {
+  list-style: square;
+  line-height: 1.5em;
+  padding-left: 1.4em;
+}
+
+.service-facts p {
+  margin: 1em 0;
+}
+
+footer {
+  margin: 4em 0;
+}
+
+/* CSS FOR PRODUCTS PAGE */
+
+.gallery-img1 {
+  background-image: url("../img/bags.jpg");
+  width: 1024px;
+  height: 200px;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.gallery-img2 {
+  background-image: url("../img/screens.jpg");
+  width: 1024px;
+  height: 100px;
+  background-size: cover;
+  margin-top: 15px;
+  background-position-y: center;
+  opacity: 75%;
+}
+
+.two-cards {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.gallery-img3 {
+  background-image: url("../img/phone.jpg");
+  width: 49%;
+  height: 500px;
+  background-size: cover;
+  background-position-x: left;
+}
+
+.gallery-img4 {
+  background-image: url("../img/phone-2.jpg");
+  width: 49%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.gallery-img4:hover,
+.gallery-img3:hover,
+.gallery-img2:hover,
+.gallery-img1:hover {
+  border: 3px dotted black;
+  border-radius: 100px;
+
+  opacity: 80%;
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+
+  height: 600px;
+}
+
+.cta-card h1 {
+  color: black;
+  text-align: center;
+}
+
+.cta-btn {
+  padding-left: 360px;
+}
+
+.cta-btn button {
+  border-radius: 60px;
+  background-color: lightslategray;
+  color: white;
+  font-size: 30px;
+}
+
+.gallery-img1,
+.gallery-img2,
+.gallery-img3,
+.gallery-img4 {
+  border: 3px solid black;
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;
+    align-content: center;
+    width: 100%;
+    height: 5em;
+    margin: 50px 0;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+  }
+
+  .navigation a {
+    font-size: 16px;
+  }
+
+  .cta-card.right {
+    display: none;
+  }
+
+  .cta-card.left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .cta-wrapper {
+    height: 325px;
+  }
+
+  .cta-card.left h1 {
+    font-size: 4.5rem;
+  }
+
+  .cta-card.left button {
+    width: 190px;
+    height: 35px;
+    background-color: white;
+    font-size: 20px;
+  }
+
+  .content-top {
+    width: 80%;
+    margin: auto;
+  }
+
+  .center-img {
+    width: 80%;
+    height: 150px;
+    margin: auto;
+  }
+
+  .content-bottom {
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+  }
+
+  footer {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer h3 {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  footer p {
+    padding-right: 35px;
+  }
+  footer .copy {
+    padding: 60px 0;
+  }
+}
+
+/* Media Queries for Services Page  (Max-Width: 800px;)*/
+
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.add-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .container header nav {
+    display: flex;
+    flex-flow: column wrap-reverse;
+    align-content: center;
+    width: 80%;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-flow: column-reverse;
+    height: 11em;
+  }
+
+  .nav-wrapper img {
+    padding: 0 0;
+    margin: 0 auto;
+  }
+
+  .container header nav a {
+    text-align: center;
+    border-top: 1px solid black;
+    width: 80%;
+    padding: 5px;
+  }
+
+  .cta-wrapper {
+    height: 325px;
+  }
+
+  .content-top {
+    flex-flow: column wrap;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .content-top .features,
+  .about {
+    width: 100%;
+    padding: 0;
+    padding-right: 30px;
+  }
+
+  .center-img {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    background-size: cover;
+  }
+
+  .content-bottom {
+    flex-flow: column wrap;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    padding-top: 30px;
+  }
+
+  .content-bottom .services,
+  .product,
+  .vision {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 30px;
+  }
+
+  .vision {
+    padding-bottom: 10px;
+  }
+  /* Services @media max-width: 500) */
+
+  .main-img {
+    height: 100px;
+  }
+  .main-info {
+    width: 70%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 500px;
+    height: calc(1900px + 5em);
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 2em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .flex-card {
+    border: 1px solid black;
+    width: calc(100% - 0em);
+    height: 300px;
+    background: #eae9e9;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 1em 1em;
+  }
+
+  .service-facts {
+    width: 500px;
+  }
+  .add-content {
+    flex-flow: column wrap;
+    width: 80%;
+  }
+  .add-content-img {
+    width: 100%;
+  }
+
+  .add-content div {
+    width: calc(100% - 0em);
+    padding: 10px;
+  }
+
+  footer h3 {
+    margin: auto auto;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+  footer address {
+    margin: 0 auto;
+  }
+}
